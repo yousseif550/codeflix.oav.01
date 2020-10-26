@@ -1,6 +1,6 @@
 const fs = require('fs')
 
-let regex = /.*:.*/gm;
+let regex = /^[[\w][^\n]*/gm;
 let configFile = 'php.json'  
 
 let fileContent = fs.readFileSync('env').toString()
